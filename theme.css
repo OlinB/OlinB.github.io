@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "JetBrains Mono";
+    src:
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff"),
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src:
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Bold.woff2") format("woff"),
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src:
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Italic.woff2") format("woff"),
+            url("./assets/fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Italic.ttf") format("ttf");
+    font-style: italic;
+}
+
+* {
+    font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    background: linear-gradient(0deg, #000, #292d3e);
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    max-width: 600px;
+    max-height: 450px;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 15px;
+}
